@@ -1,12 +1,20 @@
+First commit:
   git config --global user.name "Jose Antonio Corachán"
   git config --global user.email jacorachan@gmail.com
-        
-First commit:
   cd jacorachan.github.com
   git init
 
+
+***************************
 Working repository:
+
+Add everithing
   git add -A
-  git commit -m 'first commit'
+  
+Review before the commit!!  
+  git status
+  git commit -m ''
+
+Make the commit!
   git remote add origin https://jacorachan@github.com/jacorachan/jacorachan.github.com.git
   git push -u origin master

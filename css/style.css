@@ -84,17 +84,17 @@
 	/* Sticky Footer by Ryan Fait http://ryanfait.com/ */
 	* {	margin: 0; }
 	html, body { height: 100%; }
-	.wrapper {min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -214px;}
-	footer, .push { height: 214px;}
-	footer { background: url("../img/footer-background.gif") repeat-x scroll 0 0 transparent} 
+	.wrapper {min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -60px;}
+	footer, .push { height: 60px;} 
+	footer { background: url("../img/footer-background.gif") repeat-x scroll 0 bottom transparent} 
 
 	/* Page colors */
 	
 	body { background: url("../img/body-background-top.gif") repeat-x scroll center 0 #E8DDCB}
-	.wrapper {background: url("../img/background-tente1.gif") no-repeat scroll 85% 27% transparent}
+	/*.wrapper {background: url("../img/background-tente1.gif") no-repeat scroll 85% 27% transparent}*/
 		
 	/* header */
-	header {font-family:Georgia, serif; color:#033649; font-size: 18pt;padding-top:3em;text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);}
+	header {font-family:Georgia, serif; color:#033649; font-size: 18pt;padding-top:25px;text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);}
 	header .title strong {font-weight:normal;color:#000}
 
 	/* logo */
@@ -105,15 +105,14 @@
 	/* content */
 	#main h3 {padding-top:3em;font-family: 'Droid Serif', sans-serif; }
 	
-	
-	
 	/* footer */
-	.ilovecss {padding-bottom:20px;}
+	.ilovecss {position:absolute;bottom:65px; right:0px}
+	.ilovecss img {width:60px}
 	footer {color:#fff;font-size: 0.95em;}
 	footer p {text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);}
-	footer ul {margin:0 auto;width: 25%;padding-top:30px}
+	footer ul {margin:0 auto;width: 25%;padding-top:0px}
 	footer ul li {display:inline;padding:0 1em 0 0 ;}	
-	.copyleft {margin:0 auto; width:30%;padding-top: 60px;font-size: 0.85em;}
+	.copyleft {margin:0 auto; width:30%;padding-top: 8px;font-size: 0.85em;}
 
 
 
