@@ -3,7 +3,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
-	<title>Jose Antonio Corach&aacute;n - Frontend technologies Github playground</title>
+	<title>Javascript basics</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="./css/720_grid.css" type="text/css" media="screen and (min-width: 720px)">
 	<link rel="stylesheet" href="./css/986_grid.css" type="text/css" media="screen and (min-width: 986px)">
 	<link rel="stylesheet" href="./css/1236_grid.css" media="screen and (min-width: 1236px)" >
-	
+
 	<!-- code highlight -->
 	<link rel="stylesheet" href="./css/tinylight-light.css" media="screen and (min-width: 1236px)" >
 	
@@ -29,24 +29,84 @@
 <body>
 	<div class="wrapper grid">
 		<!-- header -->
-		<header class="row">
-			<div class="slot-1 logobox1">
-				<div class="logobox2"></div>
-				&nbsp;
-			</div>
-			<div class="slot-3-4-5 title">
-				This is <strong>Jose Antonio Corach&aacute;n</strong> playground for all HTML &amp; Javascript stuff that I collect, inspect, or just for fun CREATE.
-			</div>
+		<header class="row back">
+			<a href="./">&lt;&lt;Back to playground</a>
 		</header>
 		
 		<!-- main content -->
 		<div id="main" role="main">
+			<h2>
+				Javascript basic examples
+			</h2>
 			<h3>
-<!--				The main purpose of this site is just to collect all the interesting front-end technologies and tips that I'm learning.  Fell free to inspect,  copy, use and abuse everithing that's in here. Don't expect big things, this is just a playground!-->
+				Object literals
 			</h3>
-			<ul id="mainmenu">
-				<li><a href="./javascript-basics.html">Javascript basics sample code</a></li>
-			</ul>
+			<div class="javascript-basics_sample">
+				<pre>
+var Sales = "Toyota";
+
+function CarTypes(name) {
+  if (name == "Honda")
+     return name;
+  else
+     return "Sorry, we don't sell " + name + ".";
+}
+
+var car = { myCar: "Saturn", getCar: CarTypes("Honda"), special: Sales };
+
+document.write(car.myCar);   // Saturn
+document.write(car.getCar);  // Honda
+document.write(car.special); // Toyota					
+				</pre>
+				<a href="https://developer.mozilla.org/en/JavaScript/Guide/Values%2c_Variables%2c_and_Literals#Object_Literals">Mozilla Developer Network documentation</a>
+			</div>
+			
+			
+			
+			<h3>
+				Conditional operator
+			</h3>
+			<div class="javascript-basics_sample">
+				<pre>
+					var status = (age >= 18) ? "adult" : "minor";
+				</pre>
+				<p>This statement assigns the value "adult" to the variable status if age is eighteen or more. Otherwise, it assigns the value "minor" to status.</p>
+				<a href="https://developer.mozilla.org/en/JavaScript/Guide/Expressions_and_Operators#conditional_operator">Mozilla Developer Network documentation</a>
+			</div>
+			
+			
+			
+			<h3>
+				in
+			</h3>
+			<p></p>
+			<div class="javascript-basics_sample">
+				<pre>
+// Arrays
+var trees = new Array("redwood", "bay", "cedar", "oak", "maple");
+0 in trees;        // returns true
+3 in trees;        // returns true
+6 in trees;        // returns false
+"bay" in trees;    // returns false (you must specify the index number,
+                   // not the value at that index)
+"length" in trees; // returns true (length is an Array property)
+
+// Predefined objects
+"PI" in Math;          // returns true
+var myString = new String("coral");
+"length" in myString;  // returns true
+
+// Custom objects
+var mycar = {make: "Honda", model: "Accord", year: 1998};
+"make" in mycar;  // returns true
+"model" in mycar; // returns true
+
+				</pre>
+				<p>The in operator returns true if the specified property is in the specified object..</p>
+				<a href="https://developer.mozilla.org/en/JavaScript/Guide/Expressions_and_Operators#conditional_operator">Mozilla Developer Network documentation</a>
+			</div>
+
+			
 		</div>
 		
 		<!-- push footer -->
@@ -82,6 +142,7 @@
 			<p class="copyleft">Copyleft tag goes here. Use and abuse whatever you see!</p>
 		</div>
 	</footer>
+
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>

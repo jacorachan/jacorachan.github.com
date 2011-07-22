@@ -1,0 +1,70 @@
+
+/* ### TinyLight CSS Styles ( Light ) */ 
+pre, code { display:none; } 
+
+/* ### setup wrappers for the new tinylight box */
+.tl-wrap   { display:block; margin:0 0 16px 0; padding:6px; background:#ffffff; border:1px solid #e0e0e0; overflow:hidden; } 
+.tl-wrap * { font-family:"Courier New", Courier; font-style:normal; font-weight:normal; font-size:12px; line-height:13px; margin:0; padding:0; border:0; outline:none; } 
+
+/* ### source code viewer box */
+.tl-header   { display:block; margin:0 0 4px 0; padding:2px; text-align:right; background:#efefef; color:#888888; } 
+.tl-code     { display:block; overflow:hidden; color:#002244; } /* main code text color */ 
+
+/* ### all source comments */ 
+.tl-comment   { color:#999999; } 
+.tl-comment * { color:#999999; font-style:italic; } 
+
+/* ### default colors */ 
+.tl-string-code   { color:#006600; }
+.tl-integer-code  { color:#ff0000; } 
+.tl-function-code { color:#0033ff; } 
+.tl-operator-code { color:#666666; } 
+.tl-keyword-code  { color:#006600; } 
+
+/* ### CSS colors */ 
+.tl-string-css    { color:#008800; } 
+.tl-target-css    { color:#ff00ff; } 
+.tl-value-css     { color:#0011ff; } 
+.tl-warn-css      { color:#ff1100; } 
+.tl-import-css    { color:#cc3300; } 
+
+/* ### PHP colors */ 
+.tl-string-php    { color:#cc1100; }
+.tl-integer-php   { color:#ff0000; } 
+.tl-function-php  { color:#0011ff; } 
+.tl-operator-php  { color:#0011ff; } 
+.tl-keyword-php   { color:#006600; } 
+.tl-global-php    { color:#0066ff; } 
+
+/* ### JS colors */ 
+.tl-string-js     { color:#0011ff; }
+.tl-integer-js    { color:#ff0000; } 
+.tl-function-js   { color:#990099; } 
+.tl-operator-js   { color:#0011ff; }  
+.tl-keyword-js    { color:#000066; } 
+
+/* ### AS/C colors */ 
+.tl-string-as     { color:#006600; }
+.tl-integer-as    { color:#ff0000; } 
+.tl-function-as   { color:#0022ff; } 
+.tl-operator-as   { color:#0022ff; } 
+.tl-keyword-as    { color:#0066ff; } 
+
+/* ### HTML colors */ 
+.tl-tag-html      { color:#001188; } 
+.tl-string-html   { color:#0011ff; }
+.tl-table-html    { color:#006633; } 
+.tl-form-html     { color:#cc6600; }  
+.tl-script-html   { color:#884400; } 
+.tl-style-html    { color:#ff00ff; } 
+.tl-image-html    { color:#990044; } 
+.tl-function-html { color:#990099; } 
+
+/* ### XML colors */ 
+.tl-tag-xml       { color:#001188; } 
+.tl-string-xml    { color:#009922; }
+.tl-cdata-xml     { color:#882200; } 
+
+
+
+

@@ -74,6 +74,8 @@
 	h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 	a, a:active, a:visited { color: #607890; }
 	a:hover { color: #036; }
+	
+	p {padding:.6em 0}
 
 /* 
  * Page style
@@ -84,8 +86,8 @@
 	/* Sticky Footer by Ryan Fait http://ryanfait.com/ */
 	* {	margin: 0; }
 	html, body { height: 100%; }
-	.wrapper {min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -60px;}
-	footer, .push { height: 60px;} 
+	.wrapper {min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -105px;}
+	footer, .push { height: 105px;} 
 	footer { background: url("../img/footer-background.gif") repeat-x scroll 0 bottom transparent} 
 
 	/* Page colors */
@@ -94,8 +96,10 @@
 	/*.wrapper {background: url("../img/background-tente1.gif") no-repeat scroll 85% 27% transparent}*/
 		
 	/* header */
-	header {font-family:Georgia, serif; color:#033649; font-size: 18pt;padding-top:25px;text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);}
+	header {font-family:Georgia, serif; color:#033649; font-size: 18pt;padding-top:25px;text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);width:100%}
 	header .title strong {font-weight:normal;color:#000}
+	header.back { margin-bottom:2em;border-bottom:1px solid #000;}
+	header.back a {font-size:10pt;text-align:right}
 
 	/* logo */
 	div.logobox1 {margin-top:10px;display:block;width:77px;height:77px;background-color:#031634;z-index:10;border-radius: 4px;position:relative;}
@@ -106,16 +110,23 @@
 	#main h3 {padding-top:3em;font-family: 'Droid Serif', sans-serif; }
 	
 	/* footer */
-	.ilovecss {position:absolute;bottom:65px; right:0px}
-	.ilovecss img {width:60px}
+	#ilovecss {text-align:right}
+	#ilovecss img {width:60px}
 	footer {color:#fff;font-size: 0.95em;}
 	footer p {text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);}
-	footer ul {margin:0 auto;width: 25%;padding-top:0px}
+	footer ul {margin:0 auto;width: 25%;padding-top:8px}
 	footer ul li {display:inline;padding:0 1em 0 0 ;}	
-	.copyleft {margin:0 auto; width:30%;padding-top: 8px;font-size: 0.85em;}
+	.copyleft {margin:0 auto; width:30%;padding-top: 15px;font-size: 0.85em;}
+	#lastmodified { color:#666; font-size:7.5pt}
+	
+	/* javascrip-basics.html */
+		
+		
+	.javascript-basics_sample {width:100%}
+	.javascript-basics_sample a {text-align:right;color:#666;font-size:8pt;}
 
-
-
+	/* fix for margin bottom */
+	.tl-wrap {margin:0!important}
 
 /* 
  * Common classes
